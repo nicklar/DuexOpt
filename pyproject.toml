@@ -1,0 +1,46 @@
+# pyproject.toml 
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "duexopt" #
+version = "0.1.0"
+authors = [
+  { name="Nick Larson", email="tuc.nls@gmail.com" },
+]
+description = "A simple library for bilevel-inspired hyperparameter optimization (DuexOpt)" # Updated description
+readme = "README.md"
+requires-python = ">=3.7" # For dict insertion order
+license = {text = "Apache-2.0"} # Or your chosen license identifier/file
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = ["hyperparameter optimization", "cross-validation", "shgo", "optimization", "bilevel", "tuning"]
+dependencies = [
+    "numpy>=1.21.6",
+    "scipy>=1.7.3",
+]
+
+# Optional: Add URLs for repository, homepage etc.
+# [project.urls]
+# Homepage = "https://github.com/nicklar/duexopt"
+# Repository = "https://github.com/nicklar/duexopt"
+
+# Dependencies will be added here by 'uv add' below
+
+# Example of tool config if you use ruff
+# [tool.ruff]
+# line-length = 88
